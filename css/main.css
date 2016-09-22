@@ -1,0 +1,122 @@
+html {
+    height: auto;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#home .first-column {
+    max-width: 40%;
+    float: left;
+}
+
+#home .second-column {
+    margin-left: 40%;
+}
+
+#home .text_header {
+    font-size: 23px;
+    overflow: hidden;
+    color: #3d6cb0;
+    text-transform: uppercase;
+}
+#home .frame {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#home .frame svg {
+    width: 100%;
+    min-height: 250px;
+    max-height: 460px;
+}
+
+#home h3 {
+    overflow: hidden;
+    color: #3d6cb0;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+#home .profile p {
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+#home .contact li {
+    position: absolute;
+    float: left;
+}
+
+#home .contact li .description {
+    margin-left: 150px;
+}
+
+#home .skills h4 {
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#home .skills .marks {
+    text-align: center;
+    padding: 15px;
+}
+
+#home .skills .marks li {
+    display: inline-block;
+}
+
+#home .skills .marks .mark {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #3d6cb0;
+    margin-right: 3px;
+}
+
+#home .skills .marks .mark-off {
+    background: #e6e6e6;
+}
+
+.education ul {
+    font-size: 50px;
+}
+
+.education li span,
+.education li h4 {
+    font-size: 23px;
+}
+
+.education li p {
+    font-size: 15px;
+}
+
+#home .experience .text_header {
+    color: #000;
+}
+
+.experience ul {
+    font-size: 50px;
+}
+
+.experience li span,
+.experience li h4 {
+    font-size: 23px;
+}
+
+.experience li p {
+    font-size: 15px;
+}
+
