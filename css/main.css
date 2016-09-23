@@ -103,23 +103,20 @@ body {
     line-height: 1.4;
 }
 
-#home .contact li {
-    position: absolute;
-    float: left;
-    list-style-type: none;
+#home .contact table th {
+    text-align: left;
+    padding: 15px 0;
 }
 
-#home .contact li .description {
-    padding-left: 150px;
-}
-
-#home .contact ul {
-    margin-left: 0;
-    padding-left: 0;
+#home .contact .description {
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 #home .skills .subheader {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin: 0;
 }
 
