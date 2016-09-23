@@ -3,11 +3,11 @@
 #home .frame h1,
 #home .frame h4,
 #home .text_header {
-    font-family: "MyriadProBold";
+    font-family: "MyriadProBold", serif;
 }
 
 .light, #home .frame h2 {
-    font-family: "MyriadProLightSemiExtended_31641";
+    font-family: "MyriadProLightSemiExtended_31641", serif;
 }
 
 .regular,
@@ -18,8 +18,8 @@
 #home .experience .date,
 #home .education ul li p,
 #home .experience ul li p
- {
-    font-family: "MyriadProRegular";
+{
+    font-family: "MyriadProRegular", serif;
 }
 
 html {
@@ -100,12 +100,12 @@ body {
 
 #home .profile p {
     font-size: 15px;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 #home .contact table th {
     text-align: left;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 #home .contact .description {
@@ -143,22 +143,39 @@ body {
     background: #e6e6e6;
 }
 
-.education ul,
-.experience ul {
+#home .education ul,
+#home .experience ul {
     margin: 0;
-    font-size: 50px;
+    list-style: none;
 }
 
-.education li span,
-.education li h4,
-.experience li span,
-.experience li h4 {
-    margin: 0;
-    font-size: 23px;
+#home .education ul .circle,
+#home .experience ul .circle{
+    margin-left: -32px;
+    margin-top: 3px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #000000;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 9px;
 }
 
-.education li p,
-.experience li p {
+#home .education .paragraph,
+#home .experience .paragraph {
+    margin-top: 25px;
+}
+
+#home .education li span,
+#home .experience li span,
+#home .education li h4,
+#home .experience li h4 {
+    margin: 0;
+}
+
+#home .education li p,
+#home .experience li p {
     margin: 0;
     font-size: 15px;
 }
@@ -167,51 +184,55 @@ body {
     font-size: 22px;
     font-weight: 300;
 }
+
 #home .experience .text_header {
-    color: #000;
+    color: #000000;
 }
 
-#home .subheader{
-    display: flex;
-    width: 50%;
-}
-
-#home .subheader .left {
-    justify-content: flex-start;
-}
-
-#home .subheader .right {
-    justify-content: flex-end;
-}
-
-#home .software .subheader .gray-bar {
-    background: #e6e6e6;
+#home .software table {
+    border-collapse: collapse;
+    border-spacing: 40px 0;
     width: 100%;
-    height: 20px;
+    text-align: left;
 }
 
-#home .software .subheader .gray-bar .blue-bar {
+#home .software .left {
+    padding-right: 50px;
+}
+
+#home .software .right {
+    padding-left: 50px;
+}
+
+#home .software .block .gray-bar {
+    background: #e6e6e6;
+    height: 25px;
+}
+
+#home .software .block .gray-bar .blue-bar {
     float: left;
     background: #3d6cb0;
     width: 90%;
-    height: 20px;
+    height: 25px;
 }
 
-#home .software .subheader .gray-bar .dreamweaver {
+#home .software .block .gray-bar .dreamweaver {
     width: 80%;
 }
 
-#home .software .subheader .gray-bar .illustrator {
+#home .software .block .gray-bar .illustrator {
     width: 70%;
 }
 
-#home .software .subheader .gray-bar .after-effects {
+#home .software .block .gray-bar .after-effects {
     width: 65%;
 }
 
-#home .software .subheader .gray-bar .indesign {
+#home .software .block .gray-bar .indesign {
     width: 60%;
 }
+
+        /*Иконки и линии*/
 
 .icon,
 #home h3:before {
@@ -227,27 +248,27 @@ body {
 }
 
 #home .profile h3:before {
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
 
 #home .contact h3:before {
-    background-position: -83px 0px;
+    background-position: -83px 0;
 }
 
 #home .skills h3:before {
-    background-position: -171px 0px;
+    background-position: -171px 0;
 }
 
 #home .education h3:before {
-    background-position: -259px 0px;
+    background-position: -259px 0;
 }
 
 #home .experience h3:before {
-    background-position: -355px 0px;
+    background-position: -355px 0;
 }
 
 #home .software h3:before {
-    background-position: -447px 0px;
+    background-position: -447px 0;
 }
 
 .line,
