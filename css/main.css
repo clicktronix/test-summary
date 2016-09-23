@@ -1,3 +1,27 @@
+.bold,
+#home h3,
+#home .frame h1,
+#home .frame h4,
+#home .text_header {
+    font-family: "MyriadProBold";
+}
+
+.light, #home .frame h2 {
+    font-family: "MyriadProLightSemiExtended_31641";
+}
+
+.regular,
+#home .profile p,
+#home .subheader,
+#home .contact .description,
+#home .education .date,
+#home .experience .date,
+#home .education ul li p,
+#home .experience ul li p
+ {
+    font-family: "MyriadProRegular";
+}
+
 html {
     height: auto;
 }
@@ -14,7 +38,7 @@ body {
 }
 
 #home .first-column {
-    max-width: 40%;
+    max-width: 35%;
     float: left;
 }
 
@@ -23,11 +47,28 @@ body {
 }
 
 #home .text_header {
+    margin: 0;
     font-size: 23px;
     overflow: hidden;
     color: #3d6cb0;
     text-transform: uppercase;
 }
+
+#home .subheader {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#home h3 {
+    font-size: 40px;
+    overflow: hidden;
+    color: #3d6cb0;
+    background: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
 #home .frame {
     display: block;
     width: 100%;
@@ -41,34 +82,49 @@ body {
     max-height: 460px;
 }
 
-#home h3 {
-    overflow: hidden;
-    color: #3d6cb0;
-    background: #fff;
-    text-transform: uppercase;
+#home .frame h1 {
+    font-size: 75px;
+    margin: 0;
+}
+
+#home .frame h2 {
+    font-size: 65px;
+    margin: 0;
+}
+
+#home .frame h4 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 100px;
 }
 
 #home .profile p {
-    font-size: 12px;
-    line-height: 1.1;
+    font-size: 15px;
+    line-height: 1.4;
 }
 
 #home .contact li {
     position: absolute;
     float: left;
+    list-style-type: none;
 }
 
 #home .contact li .description {
-    margin-left: 150px;
+    padding-left: 150px;
 }
 
-#home .skills h4 {
+#home .contact ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#home .skills .subheader {
     text-align: center;
     margin: 0;
-    text-transform: uppercase;
 }
 
 #home .skills .marks {
+    margin: 0;
     text-align: center;
     padding: 15px;
 }
@@ -90,33 +146,126 @@ body {
     background: #e6e6e6;
 }
 
-.education ul {
+.education ul,
+.experience ul {
+    margin: 0;
     font-size: 50px;
 }
 
 .education li span,
-.education li h4 {
+.education li h4,
+.experience li span,
+.experience li h4 {
+    margin: 0;
     font-size: 23px;
 }
 
-.education li p {
+.education li p,
+.experience li p {
+    margin: 0;
     font-size: 15px;
 }
 
+#home .date {
+    font-size: 22px;
+    font-weight: 300;
+}
 #home .experience .text_header {
     color: #000;
 }
 
-.experience ul {
-    font-size: 50px;
+#home .subheader{
+    display: flex;
+    width: 50%;
 }
 
-.experience li span,
-.experience li h4 {
-    font-size: 23px;
+#home .subheader .left {
+    justify-content: flex-start;
 }
 
-.experience li p {
-    font-size: 15px;
+#home .subheader .right {
+    justify-content: flex-end;
 }
+
+#home .software .subheader .gray-bar {
+    background: #e6e6e6;
+    width: 100%;
+    height: 20px;
+}
+
+#home .software .subheader .gray-bar .blue-bar {
+    float: left;
+    background: #3d6cb0;
+    width: 90%;
+    height: 20px;
+}
+
+#home .software .subheader .gray-bar .dreamweaver {
+    width: 80%;
+}
+
+#home .software .subheader .gray-bar .illustrator {
+    width: 70%;
+}
+
+#home .software .subheader .gray-bar .after-effects {
+    width: 65%;
+}
+
+#home .software .subheader .gray-bar .indesign {
+    width: 60%;
+}
+
+.icon,
+#home h3:before {
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: url("../img/sprite.png") no-repeat center center;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-size: cover;
+    background-origin: border-box;
+}
+
+#home .profile h3:before {
+    background-position: 0px 0px;
+}
+
+#home .contact h3:before {
+    background-position: -83px 0px;
+}
+
+#home .skills h3:before {
+    background-position: -171px 0px;
+}
+
+#home .education h3:before {
+    background-position: -259px 0px;
+}
+
+#home .experience h3:before {
+    background-position: -355px 0px;
+}
+
+#home .software h3:before {
+    background-position: -447px 0px;
+}
+
+.line,
+#home h3:after {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 100%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    background: #3d6cb0;
+    margin-right: -100%;
+    border: solid #fff;
+    border-width: 0 10px;
+}
+
+
 
