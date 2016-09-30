@@ -120,17 +120,17 @@ h3 {
     margin: 0;
 }
 
-.first-column__skills .marks {
+.first-column__skills .b-marks {
     margin: 0;
     text-align: center;
     padding: 15px;
 }
 
-.first-column__skills .marks li {
+.first-column__skills .b-marks li {
     display: inline-block;
 }
 
-.first-column__skills .marks .mark {
+.first-column__skills .b-marks .b-marks__mark {
     display: block;
     width: 16px;
     height: 16px;
@@ -139,7 +139,7 @@ h3 {
     margin-right: 3px;
 }
 
-.first-column__skills .marks .mark-off {
+.first-column__skills .b-marks .b-marks__mark-off {
     background: #e6e6e6;
 }
 
@@ -273,12 +273,11 @@ h3:before {
 
 .line,
 h3:after {
-    content: "";
     display: inline-block;
+    content: "";
     height: 5px;
     width: 100%;
     vertical-align: middle;
-    box-sizing: border-box;
     background: #3d6cb0;
     margin-right: -100%;
     margin-left: 15px;
