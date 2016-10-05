@@ -1,12 +1,15 @@
+@charset "UTF-8"
+@import "./fonts.styl"
+
 .bold
 h3
 .first-column__frame h1
 .first-column__frame h4
 .b-paragraph__text-header
-  font-family "MyriadProBold" serif
+  font-family "MyriadProBold"
 
 .light, .first-column__frame h2
-  font-family "MyriadProLightSemiExtended_31641" serif
+  font-family "MyriadProLightSemiExtended_31641"
 
 .regular
 .first-column__profile p
@@ -16,7 +19,7 @@ h3
 .b-second-column__experience .b-paragraph__date
 .b-second-column__education ul li p
 .b-second-column__experience ul li p
-  font-family "MyriadProRegular" serif
+  font-family "MyriadProRegular"
 
 html
   height auto
@@ -56,6 +59,7 @@ h3
   background #fff
   text-transform uppercase
   margin-bottom 0
+  vertical-align middle
 
 .first-column__frame
   display block
@@ -199,7 +203,7 @@ h3:before
   display inline-block
   width 70px
   height 70px
-  background url('../img/sprite.png') no-repeat center center
+  background require=(url(./img/sprite.png))no-repeat center center
   vertical-align middle
   margin-right 5px
   background-size cover
@@ -229,7 +233,7 @@ h3:after
   content ""
   height 5px
   width 100%
-  vertical-align middle
+  vertical-align 23%
   background #3d6cb0
   margin-right -100%
   margin-left 15px

@@ -5,8 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './frontend/css/main.styl',
-        fonts: './frontend/css/fonts.styl'
+        main: './frontend/styles/main.styl'
     },
     output: {
         path: "./public",
@@ -21,8 +20,11 @@ module.exports = {
             test: /\.styl$/,
             loader: ExtractTextPlugin.extract('css!stylus?resolve url')
         }, {
-            test: /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
-            loader: 'file?name=[path][name].[ext]'
+            test: /\.(svg|ttf|eot|woff|woff2)$/,
+            loader: 'file?name=./src/fonts/[name].[ext]'
+        }, {
+            test: /\.(png|jpg)$/,
+            loader: 'file?name=./src/img/[name].[ext]'
         }]
     },
 
@@ -31,6 +33,6 @@ module.exports = {
             filename: 'index.html',
             template: './frontend/index.pug'
         }),
-        new ExtractTextPlugin('./frontend/css/[name].css', {allChunks: true}),
+        new ExtractTextPlugin('[name].css', {allChunks: true}),
     ]
 };
