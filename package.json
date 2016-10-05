@@ -1,0 +1,34 @@
+{
+  "name": "testsummary.github.io.git",
+  "version": "1.0.0",
+  "description": "Summary FSD test",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clicktronix/testsummary.github.io.git"
+  },
+  "keywords": [
+    "summary",
+    "test",
+    "webpack"
+  ],
+  "author": "Manakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clicktronix/testsummary.github.io/issues"
+  },
+  "homepage": "https://github.com/clicktronix/testsummary.github.io#readme",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "pug": "^2.0.0-beta6",
+    "pug-loader": "^2.3.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.3.1",
+    "webpack": "^1.13.2"
+  }
+}

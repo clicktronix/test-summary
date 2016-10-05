@@ -1,0 +1,277 @@
+.bold
+h3
+.first-column__frame h1
+.first-column__frame h4
+.b-paragraph__text-header
+  font-family "MyriadProBold" serif
+
+.light, .first-column__frame h2
+  font-family "MyriadProLightSemiExtended_31641" serif
+
+.regular
+.first-column__profile p
+.g-subheader
+.first-column__contact .description
+.b-second-column__education .b-paragraph__date
+.b-second-column__experience .b-paragraph__date
+.b-second-column__education ul li p
+.b-second-column__experience ul li p
+  font-family "MyriadProRegular" serif
+
+html
+  height auto
+
+body
+  width 100%
+  height auto
+  margin 0
+
+.g-container
+  max-width 1200px
+  margin 0 auto
+
+.b-first-column
+  width 35%
+  float left
+
+.b-second-column
+  margin-left 40%
+
+.b-paragraph__text-header
+  margin 0
+  font-size 23px
+  overflow hidden
+  color #3d6cb0
+  text-transform uppercase
+
+.g-subheader
+  font-size 22px
+  text-transform uppercase
+  font-weight 300
+
+h3
+  font-size 40px
+  overflow hidden
+  color #3d6cb0
+  background #fff
+  text-transform uppercase
+  margin-bottom 0
+
+.first-column__frame
+  display block
+  width 100%
+  text-align center
+  text-transform uppercase
+
+.first-column__frame svg
+  width: 100%
+  min-height 250px
+  max-height 460px
+
+.first-column__frame h1
+  font-size 75px
+  margin 0
+
+.first-column__frame h2
+  font-size 65px
+  margin 0
+
+.first-column__frame h4
+  font-size 30px
+  margin-top 0
+  margin-bottom 100px
+
+.first-column__profile p
+  font-size 15px
+  line-height 1.2
+
+.first-column__contact table th
+  text-align left
+  padding 10px 0
+
+.first-column__contact .description
+  padding-left 50px
+  font-size 20px
+  font-weight 300
+
+.first-column__skills .g-subheader
+  display flex
+  justify-content center
+  margin 0
+
+.first-column__skills .b-marks
+  margin 0
+  text-align center
+  padding 15px
+
+.first-column__skills .b-marks li
+  display inline-block
+
+.first-column__skills .b-marks .b-marks__mark
+  display block
+  width 16px
+  height 16px
+  border-radius 50%
+  background #3d6cb0
+  margin-right 3px
+
+.first-column__skills .b-marks .b-marks__mark-off
+  background #e6e6e6
+
+.b-second-column__education ul
+.b-second-column__experience ul
+  margin 0
+  list-style none
+
+.b-second-column__education ul .circle
+.b-second-column__experience ul .circle
+  margin-left -32px
+  margin-top 3px
+  position absolute
+  width 18px
+  height 18px
+  background #000000
+  -moz-border-radius 50px
+  -webkit-border-radius 50px
+  border-radius 9px
+
+.b-second-column__education .b-paragraph
+.b-second-column__experience .b-paragraph
+  margin-top 25px
+
+.b-second-column__education li span
+.b-second-column__experience li span
+.b-second-column__education li h4
+.b-second-column__experience li h4
+  margin 0
+
+.b-second-column__education li p
+.b-second-column__experience li p
+  margin 0
+  font-size 15px
+
+.b-paragraph__date
+  font-size 22px
+  font-weight 300
+
+.b-second-column__experience .b-paragraph__text-header
+  color #000000
+
+.b-second-column__software table
+  border-collapse collapse
+  border-spacing 40px 0
+  width 100%
+  text-align left
+  margin-bottom 15px
+
+.b-second-column__software .b-bar__left
+  padding-right 50px
+
+.b-second-column__software .b-bar__right
+  padding-left 50px
+
+.b-second-column__software .b-bar .gray-bar
+  background #e6e6e6
+  height 25px
+
+.b-second-column__software .b-bar .gray-bar .blue-bar
+  float left
+  background #3d6cb0
+  width 90%
+  height 25px
+
+.b-second-column__software .b-bar .gray-bar .dreamweaver
+  width 80%
+
+.b-second-column__software .b-bar .gray-bar .illustrator
+  width 70%
+
+.b-second-column__software .b-bar .gray-bar .after-effects
+  width 65%
+
+.b-second-column__software .b-bar .gray-bar .indesign
+  width 60%
+
+/*Иконки и линии*/
+.icon
+h3:before
+  content ""
+  display inline-block
+  width 70px
+  height 70px
+  background url('../img/sprite.png') no-repeat center center
+  vertical-align middle
+  margin-right 5px
+  background-size cover
+  background-origin border-box
+
+.first-column__profile h3:before
+  background-position 0 0
+
+.first-column__contact h3:before
+  background-position -83px 0
+
+.first-column__skills h3:before
+  background-position -171px 0
+
+.b-second-column__education h3:before
+  background-position -259px 0
+
+.b-second-column__experience h3:before
+  background-position -355px 0
+
+.b-second-column__software h3:before
+  background-position -447px 0
+
+.line
+h3:after
+  display inline-block
+  content ""
+  height 5px
+  width 100%
+  vertical-align middle
+  background #3d6cb0
+  margin-right -100%
+  margin-left 15px
+
+  @media screen and (min-width: 300px) and (max-width: 850px)
+    .b-first-column
+      width auto
+      padding-left 10px
+      padding-right 10px
+
+    .b-second-column
+      margin 0
+      padding-left 10px
+      padding-right 10px
+      float left
+
+    .first-column__frame svg
+      width auto
+
+    .first-column__frame h1
+      font-size 55px
+
+    .first-column__frame h2
+      font-size 45px
+
+    .first-column__frame h4
+      font-size 15px
+
+    .first-column__contact table
+      display flex
+      justify-content center
+
+    .b-second-column__education .b-paragraph__date
+    .b-second-column__experience .b-paragraph__date
+      font-size: 15px
+
+    .b-second-column__software .b-bar__left
+      padding-right: 10px
+
+    .b-second-column__software .b-bar__right
+      padding-left 10px
+
+    .line
+    h3:after
+      display none
