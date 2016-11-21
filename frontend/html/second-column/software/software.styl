@@ -1,15 +1,23 @@
-.b-second-column__software table
+.software-bars
   border-collapse collapse
   border-spacing 40px 0
   width 100%
   text-align left
   margin-bottom 15px
 
-.b-bar__left
+.bar__left
   padding-right 50px
 
-.b-bar__right
+@media screen and (max-width: 850px)
+  .bar__left
+    padding-right: 10px
+
+.bar__right
   padding-left 50px
+
+@media screen and (max-width: 850px)
+  .bar__right
+    padding-left 10px
 
 .gray-bar
   background #e6e6e6
@@ -33,9 +41,3 @@
 .gray-bar .indesign
   width 60%
 
-@media screen and (min-width: 300px) and (max-width: 850px)
-  .b-bar__left
-    padding-right: 10px
-
-  .b-bar__right
-    padding-left 10px

@@ -1,8 +1,8 @@
-.b-second-column__experience ul
+.second-column__experience ul
   margin 0
   list-style none
 
-.b-paragraph__circle
+.paragraph__circle
   margin-left -32px
   margin-top 3px
   position absolute
@@ -13,24 +13,26 @@
   -webkit-border-radius 50px
   border-radius 9px
 
-.b-paragraph
+.paragraph
   margin-top 25px
 
-.b-paragraph__date
+.paragraph__date
   font-size 22px
   font-weight 300
 
-.b-second-column__experience li span
-.b-second-column__experience li h4
+@media screen and (max-width: 850px)
+  .paragraph__date
+    font-size: 15px
+
+.second-column__experience li span
+.second-column__experience li h4
   margin 0
 
-.b-second-column__experience li p
+.second-column__experience li p
   margin 0
   font-size 15px
 
-.b-second-column__experience .b-paragraph__text-header
+.second-column__experience .paragraph__text-header
   color #000000
 
-@media screen and (min-width: 300px) and (max-width: 850px)
-  .b-paragraph__date
-    font-size: 15px
+
