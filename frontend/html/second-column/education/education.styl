@@ -1,36 +1,41 @@
-.second-column__education ul
-  margin 0
-  list-style none
-
-.paragraph__circle
-  margin-left -32px
-  margin-top 3px
-  position absolute
-  width 18px
-  height 18px
-  background #000000
-  -moz-border-radius 50px
-  -webkit-border-radius 50px
-  border-radius 9px
+.paragraph
+  margin-top 15px
 
 .paragraph
-  margin-top 25px
+  &__circle
+    margin-left -32px
+    margin-top 3px
+    position absolute
+    width 18px
+    height 18px
+    background #000000
+    -moz-border-radius 50px
+    -webkit-border-radius 50px
+    border-radius 9px
 
-.paragraph__date
-  font-size 22px
-  font-weight 300
+  &__date
+    font-size 26px
+    font-weight 300
 
-@media screen and (max-width: 850px)
-  .paragraph__date
-    font-size: 15px
+  @media screen and (max-width: 850px)
+    &__date
+      font-size: 15px
 
-.second-column__education li span
-.second-column__education li h4
-  margin 0
+  &__education-description
+    padding-top 0.5%
 
-.second-column__education li p
-  margin 0
-  font-size 15px
+.second-column
+  &__education ul
+    margin 0
+    list-style none
+
+  &__education li span
+  &__education li h4
+    margin 0
+
+  &__education li p
+    margin 0
+    font-size 15px
 
 
 

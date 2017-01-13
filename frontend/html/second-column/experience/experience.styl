@@ -1,38 +1,46 @@
-.second-column__experience ul
-  margin 0
-  list-style none
-
-.paragraph__circle
-  margin-left -32px
-  margin-top 3px
-  position absolute
-  width 18px
-  height 18px
-  background #000000
-  -moz-border-radius 50px
-  -webkit-border-radius 50px
-  border-radius 9px
+.paragraph
+  margin-top 15px
 
 .paragraph
-  margin-top 25px
+  &__circle
+    margin-left -32px
+    margin-top 3px
+    position absolute
+    width 18px
+    height 18px
+    background #000000
+    -moz-border-radius 50px
+    -webkit-border-radius 50px
+    border-radius 9px
 
-.paragraph__date
-  font-size 22px
-  font-weight 300
+  &__date
+    font-size 26px
+    font-weight 300
 
-@media screen and (max-width: 850px)
-  .paragraph__date
-    font-size: 15px
+  @media screen and (max-width: 850px)
+    &__date
+      font-size: 15px
 
-.second-column__experience li span
-.second-column__experience li h4
-  margin 0
+  &__experience-description
+    padding-top 1.5%
 
-.second-column__experience li p
-  margin 0
-  font-size 15px
+.second-column
+  &__experience ul
+    margin 0
+    list-style none
 
-.second-column__experience .paragraph__text-header
-  color #000000
+  &__experience li span
+  &__experience li h4
+    margin 0
+
+  &__experience li p
+    margin 0
+    font-size 15px
+
+  &__experience .paragraph__text-header
+    color #000000
+
+.second-column__experience
+  margin-top 50px
 
 
