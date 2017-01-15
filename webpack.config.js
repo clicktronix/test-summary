@@ -28,6 +28,11 @@ module.exports = {
         }]
     },
 
+    devServer: {
+        host: 'localhost',
+        port: 8080
+    },
+
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
