@@ -1,6 +1,8 @@
 # Testsummary
 ##Full Stack Develoment test task 
 ### To start build application entered 
-    <npm i>
+    npm i
 ### After packages installation run
-    <webpack>
+    npm run build
+### or 
+    npm run dev
