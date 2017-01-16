@@ -2,22 +2,23 @@
 
 .bold
 .block-title
-.user-surname
-.user-position
+.frame__user-surname
+.frame__user-position
 .paragraph__text-header
+.contact__text-header
   font-family "MyriadProBold", "Eras Bold ITC", serif or sans
 
 .light
-.user-name
+.frame__user-name
   font-family "MyriadProLightSemiExtended_31641", "Eras Light ITC", serif or sans
 
 .regular
-.first-column__profile p
+.profile__text-about
 .g-subheader
 .description
+.contact__description
 .paragraph__date
-.second-column__education p
-.second-column__experience p
+.paragraph__description
   font-family "MyriadProRegular", "Eras Medium ITC", serif or sans
 
 html
@@ -35,18 +36,14 @@ body
 .first-column
   width 35%
   float left
-
-@media screen and (max-width: 850px)
-  .first-column
+  @media screen and (max-width: 850px)
     width auto
     padding-left 10px
     padding-right 10px
 
 .second-column
   margin-left 40%
-
-@media screen and (max-width: 850px)
-  .second-column
+  @media screen and (max-width: 850px)
     margin 0
     padding-left 10px
     padding-right 10px
@@ -54,24 +51,56 @@ body
 
 .paragraph__text-header
   margin 0
-  font-size 26px
+  font-size 1.5rem
   overflow hidden
   color #3d6cb0
   text-transform uppercase
 
 .g-subheader
-  font-size 24px
+  margin 0
+  font-size 1.5rem
   text-transform uppercase
   font-weight 300
 
 .block-title
-  font-size 40px
+  font-size 2.5rem
   overflow hidden
   color #3d6cb0
   background #fff
   text-transform uppercase
   margin-bottom 0
   vertical-align middle
+
+.paragraph
+  margin-top 15px
+
+  &__circle
+    margin-left -32px
+    margin-top 3px
+    position absolute
+    width 18px
+    height 18px
+    background #000000
+    -moz-border-radius 50px
+    -webkit-border-radius 50px
+    border-radius 9px
+
+  &__title
+  &__text-header
+    margin 0
+
+  &__date
+    margin 0
+    font-size 1.4rem
+    font-weight 300
+    @media screen and (max-width: 850px)
+      font-size: 1rem
+
+  &__description
+    margin 0
+    font-size 1rem
+    padding-top 5px
+    padding-bottom 3px
 
 /*icons and lines*/
 .icon
@@ -86,22 +115,22 @@ body
   background-size cover
   background-origin border-box
 
-.first-column__profile h3:before
+.profile h3:before
   background-position 0 0
 
-.first-column__contact h3:before
+.contact h3:before
   background-position -93px 0
 
-.first-column__skills h3:before
+.skills h3:before
   background-position -192px 0
 
-.second-column__education h3:before
+.education h3:before
   background-position -294px 0
 
-.second-column__experience h3:before
+.experience h3:before
   background-position -407px 0
 
-.second-column__software h3:before
+.software h3:before
   background-position -512px 0
 
 .line
@@ -114,17 +143,15 @@ body
   background #3d6cb0
   margin-right -100%
   margin-left 15px
-
-@media screen and (max-width: 850px)
-  .line
-  .block-title:after
+  @media screen and (max-width: 850px)
     display none
 
-@import '../html/first-column/frame/frame.styl'
-@import '../html/first-column/contact/contact.styl'
-@import '../html/first-column/profile/profile.styl'
-@import '../html/first-column/skills/skills.styl'
-@import '../html/second-column/education/education.styl'
-@import '../html/second-column/experience/experience.styl'
-@import '../html/second-column/software/software.styl'
+@import '../html/frame/frame.styl'
+@import '../html/contact/contact.styl'
+@import '../html/profile/profile.styl'
+@import '../html/skills/skills.styl'
+@import '../html/marks/marks.styl'
+@import '../html/education/education.styl'
+@import '../html/experience/experience.styl'
+@import '../html/software/software.styl'
 @import './fonts.styl'

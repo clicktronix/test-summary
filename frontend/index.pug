@@ -3,15 +3,17 @@ html(lang='ru')
     head
         meta(charset='UTF-8')
         title Summary
+        meta(name='keywords' content='FSD team, test task, test model')
+        meta(name='description' content='Test task for FSD team')
         meta(name='viewport' content='width=device-width' initial-scale='1.0')
     body
         div.g-container
             section.first-column
-                include html/first-column/frame/frame
-                include html/first-column/profile/profile
-                include html/first-column/contact/contact
-                include html/first-column/skills/skills
+                include html/frame/frame
+                include html/profile/profile
+                include html/contact/contact
+                include html/skills/skills
             section.second-column
-                include html/second-column/education/education
-                include html/second-column/experience/experience
-                include html/second-column/software/software
+                include html/education/education
+                include html/experience/experience
+                include html/software/software
