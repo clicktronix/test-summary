@@ -1,0 +1,16 @@
+mixin contact(title, type1, type2, type3, type4)
+    .contact
+        h3.block-title #{title}
+        table.contact__contact-table
+            tr.paragraph
+                th.contact__text-header address
+                th.contact__description #{type1}
+            tr.paragraph
+                th.contact__text-header e-mail
+                th.contact__description #{type2}
+            tr.paragraph
+                th.contact__text-header phone
+                th.contact__description #{type3}
+            tr.paragraph
+                th.contact__text-header website
+                th.contact__description #{type4}

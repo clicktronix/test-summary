@@ -1,0 +1,11 @@
+mixin marks(title, hit, nohit)
+    .g-subheader #{title}
+    ul.marks
+        - for (var i = 1; i <=hit; i++) {
+        li.marks__line
+            span.marks__mark
+        - }
+        - for (var j = 1; j <=nohit; j++) {
+        li.marks__line
+            span.marks__mark.marks__mark-off
+        - }
