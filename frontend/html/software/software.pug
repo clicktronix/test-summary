@@ -1,30 +1,22 @@
-div.software
-    h3.block-title Software
-    table.software__bars
-        tr.bar
-            th.software__left
-                h4.g-subheader Photoshop
-                div.gray-bar
-                    div.blue-bar
-            th.software__right
-                h4.g-subheader Dreamweaver
-                div.gray-bar
-                    div.blue-bar.dreamweaver
-        tr.bar
-            th.software__left
-                h4.g-subheader Illustrator
-                div.gray-bar
-                    div.blue-bar.illustrator
-            th.software__right
-                h4.g-subheader After effects
-                div.gray-bar
-                    div.blue-bar.after-effects
-        tr.bar
-            th.software__left
-                h4.g-subheader Indesign
-                div.gray-bar
-                    div.blue-bar.indesign
-            th.software__right
-                h4.g-subheader HTML&amp;CSS3
-                div.gray-bar
-                    div.blue-bar
+// mixins
+include ../bar/bar
+
+mixin software(title)
+    .software
+        h3.block-title #{title}
+        table.bars-table
+            tr.bar
+                th.bars-table__left
+                    +bar('photoshop', '90')
+                th.bars-table__right
+                    +bar('dreamweaver', '80')
+            tr.bar
+                th.bars-table__left
+                    +bar('illustrator', '70')
+                th.bars-table__right
+                    +bar('after effects', '65')
+            tr.bar
+                th.bars-table__left
+                    +bar('indesign', '60')
+                th.bars-table__right
+                    +bar('HTML&amp;CSS3', '90')

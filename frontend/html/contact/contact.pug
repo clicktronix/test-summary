@@ -1,15 +1,16 @@
-div.contact
-    h3.block-title Contact
-    table.contact__contact-table
-        tr.paragraph
-            th.contact__text-header Address
-            th.contact__description Main Street, City.
-        tr.paragraph
-            th.contact__text-header e-mail
-            th.contact__description contact@domain.com
-        tr.paragraph
-            th.contact__text-header phone
-            th.contact__description 555-555-555
-        tr.paragraph
-            th.contact__text-header website
-            th.contact__description www.yourweb.com
+mixin contact(title, type1, type2, type3, type4)
+    .contact
+        h3.block-title #{title}
+        table.contact__contact-table
+            tr.paragraph
+                th.contact__text-header address
+                th.contact__description #{type1}
+            tr.paragraph
+                th.contact__text-header e-mail
+                th.contact__description #{type2}
+            tr.paragraph
+                th.contact__text-header phone
+                th.contact__description #{type3}
+            tr.paragraph
+                th.contact__text-header website
+                th.contact__description #{type4}

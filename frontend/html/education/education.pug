@@ -1,17 +1,11 @@
-div.education
-    h3.block-title Education
-    ul.education__positions
-        - var count=4;
-        - for (var i=1; i <=count; i++) {
-        li.paragraph
-            h4.paragraph__title
-                div.paragraph__circle
-                span.paragraph__text-header Master Degree
-                span.paragraph__date   // Feb 2011 - Jun 2014
-            h4.g-subheader University name
-            p.paragraph__description.
-                Lorem Ipsum используют потому, что тот обеспечивает более
-                или менее стандартное заполнение шаблона, а также реальное распределение
-                букв и пробелов в абзацах, которое не получается при простой дубликации
-                "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
-        - }
+// mixin
+include ../../html/paragraph/paragraph
+
+mixin education(title)
+    .education
+        h3.block-title #{title}
+        ul.education__positions
+            +paragraph('master degree', 'Feb 2011 - Jun 2014', 'University')
+            +paragraph('master degree', 'Feb 2011 - Jun 2014', 'University')
+            +paragraph('master degree', 'Feb 2011 - Jun 2014', 'University')
+            +paragraph('master degree', 'Feb 2011 - Jun 2014', 'University')

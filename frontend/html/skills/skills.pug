@@ -1,4 +1,9 @@
-div.skills
-    h3.block-title Skills
-    div.skills__positions
-        include ../marks/marks
+include ../../html/marks/marks
+mixin skills(title)
+    .skills
+        h3.block-title #{title}
+        div.skills__positions
+            +marks('creative', '9', '3')
+            +marks('teamwork', '11', '1')
+            +marks('innovate', '6', '6')
+            +marks('communication', '11', '1')

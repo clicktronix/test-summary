@@ -29,26 +29,6 @@ body
   height auto
   margin 0
 
-.g-container
-  max-width 1200px
-  margin 0 auto
-
-.first-column
-  width 35%
-  float left
-  @media screen and (max-width: 850px)
-    width auto
-    padding-left 10px
-    padding-right 10px
-
-.second-column
-  margin-left 40%
-  @media screen and (max-width: 850px)
-    margin 0
-    padding-left 10px
-    padding-right 10px
-    float left
-
 .paragraph__text-header
   margin 0
   font-size 1.5rem
@@ -70,37 +50,6 @@ body
   text-transform uppercase
   margin-bottom 0
   vertical-align middle
-
-.paragraph
-  margin-top 15px
-
-  &__circle
-    margin-left -32px
-    margin-top 3px
-    position absolute
-    width 18px
-    height 18px
-    background #000000
-    -moz-border-radius 50px
-    -webkit-border-radius 50px
-    border-radius 9px
-
-  &__title
-  &__text-header
-    margin 0
-
-  &__date
-    margin 0
-    font-size 1.4rem
-    font-weight 300
-    @media screen and (max-width: 850px)
-      font-size: 1rem
-
-  &__description
-    margin 0
-    font-size 1rem
-    padding-top 5px
-    padding-bottom 3px
 
 /*icons and lines*/
 .icon
@@ -147,11 +96,14 @@ body
     display none
 
 @import '../html/frame/frame.styl'
+@import '../html/wrapper/wrapper.styl'
 @import '../html/contact/contact.styl'
 @import '../html/profile/profile.styl'
 @import '../html/skills/skills.styl'
 @import '../html/marks/marks.styl'
+@import '../html/paragraph/paragraph.styl'
 @import '../html/education/education.styl'
 @import '../html/experience/experience.styl'
 @import '../html/software/software.styl'
+@import '../html/bar/bar.styl'
 @import './fonts.styl'
