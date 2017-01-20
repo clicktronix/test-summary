@@ -1,0 +1,20 @@
+// mixins
+include ../bar/bar
+
+mixin bars-table()
+    table.bars-table
+        tr.bars-table__row
+            th.bars-table__col
+                +bar('photoshop', '90')
+            th.bars-table__col
+                +bar('dreamweaver', '80')
+        tr.bars-table__row
+            th.bars-table__col
+                +bar('illustrator', '70')
+            th.bars-table__col
+                +bar('after effects', '65')
+        tr.bars-table__row
+            th.bars-table__col
+                +bar('indesign', '60')
+            th.bars-table__col
+                +bar('HTML&amp;CSS3', '90')

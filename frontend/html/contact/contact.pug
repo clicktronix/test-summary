@@ -1,6 +1,9 @@
-mixin contact(title, type1, type2, type3, type4)
+//mixin
+include ../../html/block-title/block-title
+
+mixin contact(type1, type2, type3, type4)
     .contact
-        h3.block-title #{title}
+        +block-title('contact')
         table.contact__contact-table
             tr.paragraph
                 th.contact__text-header address

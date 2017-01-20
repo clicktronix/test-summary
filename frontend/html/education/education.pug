@@ -1,9 +1,10 @@
 // mixin
 include ../../html/paragraph/paragraph
+include ../../html/block-title/block-title
 
-mixin education(title)
+mixin education()
     .education
-        h3.block-title #{title}
+        +block-title('education')
         ul.education__positions
             +paragraph('master degree', 'Feb 2011 - Jun 2014', 'University')
             +paragraph('master degree', 'Feb 2011 - Jun 2014', 'University')

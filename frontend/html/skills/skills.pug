@@ -1,7 +1,10 @@
+//mixins
 include ../../html/marks/marks
-mixin skills(title)
+include ../../html/block-title/block-title
+
+mixin skills()
     .skills
-        h3.block-title #{title}
+        +block-title('skills')
         div.skills__positions
             +marks('creative', '9', '3')
             +marks('teamwork', '11', '1')

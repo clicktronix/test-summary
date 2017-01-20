@@ -1,22 +1,8 @@
 // mixins
-include ../bar/bar
+include ../bars-table/bars-table
+include ../../html/block-title/block-title
 
-mixin software(title)
+mixin software()
     .software
-        h3.block-title #{title}
-        table.bars-table
-            tr.bar
-                th.bars-table__left
-                    +bar('photoshop', '90')
-                th.bars-table__right
-                    +bar('dreamweaver', '80')
-            tr.bar
-                th.bars-table__left
-                    +bar('illustrator', '70')
-                th.bars-table__right
-                    +bar('after effects', '65')
-            tr.bar
-                th.bars-table__left
-                    +bar('indesign', '60')
-                th.bars-table__right
-                    +bar('HTML&amp;CSS3', '90')
+        +block-title('software')
+        +bars-table

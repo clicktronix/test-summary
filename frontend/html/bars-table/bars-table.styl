@@ -1,0 +1,18 @@
+.bars-table
+  border-collapse collapse
+  width 90%
+  text-align left
+  margin-bottom 35px
+
+  & th:nth-child(odd)
+    padding-right 50px
+    @media screen and (max-width: 850px)
+      padding-right: 10px
+
+  & th:nth-child(even)
+    padding-left 50px
+    @media screen and (max-width: 850px)
+      padding-left 10px
+
+  & .g-subheader
+    margin 15px

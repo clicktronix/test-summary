@@ -29,72 +29,14 @@ body
   height auto
   margin 0
 
-.paragraph__text-header
-  margin 0
-  font-size 1.5rem
-  overflow hidden
-  color #3d6cb0
-  text-transform uppercase
-
 .g-subheader
   margin 0
   font-size 1.5rem
   text-transform uppercase
   font-weight 300
 
-.block-title
-  font-size 2.5rem
-  overflow hidden
-  color #3d6cb0
-  background #fff
-  text-transform uppercase
-  margin-bottom 0
-  vertical-align middle
-
-/*icons and lines*/
-.icon
-.block-title:before
-  content ""
-  display inline-block
-  width 80px
-  height 80px
-  background require=(url(./img/sprite.png))no-repeat center center
-  vertical-align middle
-  margin-right 5px
-  background-size cover
-  background-origin border-box
-
-.profile h3:before
-  background-position 0 0
-
-.contact h3:before
-  background-position -93px 0
-
-.skills h3:before
-  background-position -192px 0
-
-.education h3:before
-  background-position -294px 0
-
-.experience h3:before
-  background-position -407px 0
-
-.software h3:before
-  background-position -512px 0
-
-.line
-.block-title:after
-  display inline-block
-  content ""
-  height 5px
-  width 45%
-  vertical-align 23%
-  background #3d6cb0
-  margin-right -100%
-  margin-left 15px
-  @media screen and (max-width: 850px)
-    display none
-
+@import '../html/block-title/block-title.styl'
+@import '../html/bars-table/bars-table.styl'
 @import '../html/frame/frame.styl'
 @import '../html/wrapper/wrapper.styl'
 @import '../html/contact/contact.styl'

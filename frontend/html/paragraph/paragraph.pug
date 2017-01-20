@@ -5,8 +5,5 @@ mixin paragraph(header, date, place)
             span.paragraph__text-header #{header}
             span.paragraph__date   // #{date}
         h4.g-subheader #{place}
-        p.paragraph__description.
-            Lorem Ipsum используют потому, что тот обеспечивает более
-            или менее стандартное заполнение шаблона, а также реальное распределение
-            букв и пробелов в абзацах, которое не получается при простой дубликации
-            "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+        p.paragraph__description
+            include ../../html/text-data/paragraph__description

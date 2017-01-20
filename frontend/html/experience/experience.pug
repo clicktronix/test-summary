@@ -1,9 +1,10 @@
 // mixin
 include ../../html/paragraph/paragraph
+include ../../html/block-title/block-title
 
-mixin experience(title)
+mixin experience()
     .experience
-        h3.block-title #{title}
+        +block-title('experience')
         ul.experience__positions
             +paragraph('company name', 'Feb 2011 - Jun 2014', 'your job here')
             +paragraph('company name', 'Feb 2011 - Jun 2014', 'your job here')
